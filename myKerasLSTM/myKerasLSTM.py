@@ -67,7 +67,7 @@ model.add(Dense(n_features))
 model.compile(optimizer='adam', loss='mse')
 
 # fit model
-model.fit(X, y, epochs=5, verbose=1)
+model.fit(X, y, epochs=20, verbose=1)
 
 # split infer set into samples
 X, y = split_sequences(inferSet, n_steps)
